@@ -77,6 +77,7 @@ ul li {
 
 
 /* To Do List Checkbox */
+
 .check-con1 input[type="checkbox"] {
     display: none;
 }
@@ -92,16 +93,16 @@ ul li {
 }
 
 .check-con1 input[type="checkbox"]:checked + label {
-    color: rgb(87, 78, 78);
+    color: rgba(255, 255, 255, 0.493);
 }
 
 .check-con1 input[type="checkbox"]:checked + label::after {
-    content: "X"; 
+    content: "✘"; 
     color: rgb(255, 255, 255);
     font-size: 14px;
     position: absolute;
     left: 10px;
-    top: 5px;
+    top: 4px;
 }
 
 .check-con1 li {
@@ -109,3 +110,67 @@ ul li {
 }
 
 /* In Progress Checkbox */
+
+.check-con2 input[type="checkbox"] {
+    display: none;
+}
+
+.check-con2 label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #e0f148;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.check-con2 input[type="checkbox"]:checked + label {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.check-con2 input[type="checkbox"]:checked + label::after {
+    content: "✖"; 
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+}
+
+.check-con2 li {
+    position: relative;
+}
+
+/* Done Checkbox */
+
+.check-con3 input[type="checkbox"] {
+    display: none;
+}
+
+.check-con3 label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #26e626;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.check-con3 input[type="checkbox"]:checked + label {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.check-con3 input[type="checkbox"]:checked + label::after {
+    content: "✔"; 
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+}
+
+.check-con3 li {
+    position: relative;
+}
