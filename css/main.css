@@ -3,6 +3,10 @@ body {
     font-size: 16px;
     font-family:'Times New Roman', Times, serif;
     color: #fff;
+    background-image:url(../images/homework-img-min.jpg);
+    background-repeat: no-repeat;
+    background-position: 1640px 120px;
+    background-size: 15%
 }
 
 main {
