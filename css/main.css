@@ -75,3 +75,37 @@ ul li {
     background-color: rgba(81, 194, 81, 0.5);
 }
 
+
+/* To Do List Checkbox */
+.check-con1 input[type="checkbox"] {
+    display: none;
+}
+
+.check-con1 label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #f14848;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.check-con1 input[type="checkbox"]:checked + label {
+    color: rgb(87, 78, 78);
+}
+
+.check-con1 input[type="checkbox"]:checked + label::after {
+    content: "X"; 
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.check-con1 li {
+    position: relative;
+}
+
+/* In Progress Checkbox */
